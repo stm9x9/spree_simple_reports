@@ -55,6 +55,9 @@
         <th class="sort" data-sort="sales">
           <%= Spree.t(:sales_total) %>
         </th>
+        <th>
+          <%= Spree.t(:stock_available) %>
+        </th>
       </tr>
     </thead>
     <tbody class="list">
@@ -71,6 +74,9 @@
           </td>
           <td class="sales">
             <%= row[:total_price] %>
+          </td>
+          <td class="sales">
+            <%= row[:stock] %>
           </td>
         </tr>
       <% end %>
